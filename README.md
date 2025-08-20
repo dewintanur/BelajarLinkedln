@@ -60,4 +60,7 @@ Buka index.html di browser:
 open index.html
 
 
+LINK VIDEO DEMO:https://dewintanur.github.io/BelajarLinkedln/
+
+
 atau double click file index.html.
