@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mastering LinkedIn for Career Growth — Belajar LinkedIn</title>
+  <meta name="description"
+    content="Kelas online: Mastering LinkedIn for Career Growth — bangun profil, jaringan, dan karier Anda di LinkedIn.">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS Animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+    
+    :root {
+      --accent: #0a66c2;
+      --accent-dark: #0064c8;
+      --dark: #0f1724;
+      --muted: #6b7280;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+
+    body {
+      background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+      color: var(--dark);
+      scroll-behavior: smooth;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 4rem 0 3rem;
+    }
+
+    .hero h1 {
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .sub {
+      color: var(--muted);
+    }
+
+    /* BUTTON */
+    .btn-accent {
+      background: linear-gradient(90deg, var(--accent), var(--accent-dark));
+      color: white;
+      box-shadow: 0 8px 24px rgba(10, 102, 194, 0.18);
+      transition: transform .25s;
+    }
+
+    .btn-accent:hover {
+      transform: translateY(-3px);
+    }
+
+    /* CARDS & TESTIMONIAL */
+    .feature-card,
+    .testimonial {
+      border-radius: 16px;
+      padding: 2rem;
+      transition: transform .35s ease, box-shadow .35s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(12, 20, 40, 0.08);
+    }
+
+    .testimonial {
+      background: linear-gradient(180deg, rgba(10, 102, 194, 0.06), transparent);
+    }
+
+    .testimonial:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 30px rgba(12, 20, 40, 0.05);
+    }
+
+    /* BADGE */
+    .badge-pill {
+      background: rgba(10, 102, 194, 0.08);
+      color: var(--accent);
+      font-weight: 600;
+      border-radius: 999px;
+      padding: .4rem .8rem;
+    }
+
+    /* SECTION PADDING */
+    section {
+      padding: 6rem 0;
+        scroll-margin-top: 80px; /* Sesuaikan dengan tinggi navbar */
+
+    }
+
+    section.bg-light {
+      padding: 4rem 0;
+    }
+
+    /* FAQ IMAGE */
+    #faq img {
+      max-width: 360px;
+      border-radius: 12px;
+      box-shadow: 0 12px 30px rgba(12, 20, 40, 0.06);
+    }
+
+    /* REGISTER / CTA */
+    #register {
+      background: linear-gradient(90deg, var(--accent), var(--accent-dark));
+    }
+
+    #register .card {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+    }
+
+    /* WAVE */
+    .wave svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 3rem 0;
+      background: #fff;
+    }
+
+    @media(min-width:992px) {
+      .hero {
+        padding: 6rem 0 4rem;
+      }
+    }
+     /* Hover underline animation for links */
+  .nav-link {
+    position: relative;
+    display: inline-block;
+  }
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #0a66c2;
+    transition: width 0.3s ease-in-out;
+  }
+  .nav-link:hover::after {
+    width: 100%;
+  }
+
+
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top" style="backdrop-filter: blur(12px); background: rgba(255,255,255,0.85); box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: all 0.3s;">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <div class="rounded-circle bg-gradient" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;color:white;font-weight:bold; background: linear-gradient(135deg, #0a66c2, #4dabf7);">
+        BL
+      </div>
+      <div class="d-none d-sm-block">
+        <div class="fw-bold">Belajar LinkedIn</div>
+        <small class="text-muted">Mastering LinkedIn</small>
+      </div>
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item"><a class="nav-link text-dark fw-medium px-3" href="#about" style="position: relative;">About<span class="hover-underline"></span></a></li>
+        <li class="nav-item"><a class="nav-link text-dark fw-medium px-3" href="#benefits" style="position: relative;">Benefits<span class="hover-underline"></span></a></li>
+        <li class="nav-item"><a class="nav-link text-dark fw-medium px-3" href="#testimonials" style="position: relative;">Testimonials<span class="hover-underline"></span></a></li>
+        <li class="nav-item ms-3"><a class="btn btn-gradient px-4 py-2 fw-bold" href="#register" style="background: linear-gradient(90deg,#ff7e5f,#feb47b); color:white; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.15); transition: transform 0.3s;">Daftar</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+          <p class="badge-pill">Kelas Online • 4 sesi • Live Q&amp;A</p>
+          <h1 class="display-5 mt-3">Mastering LinkedIn for Career Growth</h1>
+          <p class="lead sub mt-3">Pelajari cara membangun profil profesional, menemukan peluang, dan memperluas
+            jaringan untuk mempercepat karier Anda di LinkedIn.</p>
+
+          <div class="d-flex gap-3 mt-4">
+            <a class="btn btn-accent btn-lg" href="#register">Daftar Sekarang</a>
+            <a class="btn btn-outline-secondary btn-lg" href="#about">Lihat Rincian</a>
+          </div>
+
+          <div class="mt-4 text-muted small">
+            <strong>Deadline:</strong> 20 Agustus 2025, Pukul 23.59 WIB
+          </div>
+        </div>
+
+        <div class="col-lg-5 d-none d-lg-block" data-aos="fade-left" data-aos-delay="200">
+          <div class="card feature-card border-0 shadow-sm">
+            <div class="d-flex align-items-center gap-3">
+              <img
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
+                alt="kelas online LinkedIn" style="width:84px;height:84px;object-fit:cover;border-radius:12px">
+              <div>
+                <h6 class="mb-1">Kelas intensif + tugas praktis</h6>
+                <p class="mb-0 small text-muted">Materi langsung praktek: optimisasi profil, headline, serta strategi
+                  jaringan.</p>
+              </div>
+            </div>
+            <hr>
+            <div class="d-flex gap-2">
+              <div class="me-auto">
+                <small class="text-muted">Instruktur: Senior Career Coach</small>
+              </div>
+              <div>
+                <small class="text-muted">Level: Pemula → Menengah</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="wave" aria-hidden="true">
+    <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+      <path d="M0,0 C300,80 900,-40 1200,40 L1200,80 L0,80 Z" fill="#ffffff" />
+    </svg>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-4">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-md-6" data-aos="fade-right">
+          <h3>About the course</h3>
+          <p class="text-muted">Kelas ini dirancang untuk profesional dan mahasiswa yang ingin mengoptimalkan kehadiran
+            mereka di LinkedIn. Dalam 4 sesi interaktif peserta akan mempelajari teknik menulis headline yang menarik,
+            menyusun ringkasan yang efektif, membangun jaringan berkualitas, serta strategi mencari peluang karier.
+            Setiap sesi dilengkapi tugas praktis dan feedback langsung dari instruktur untuk memastikan peserta dapat
+            langsung menerapkan apa yang dipelajari.</p>
+
+          <ul class="list-unstyled mt-3">
+            <li class="mb-2"><strong>Durasi:</strong> 4x pertemuan (live)</li>
+            <li class="mb-2"><strong>Media:</strong> Zoom + materi PDF</li>
+            <li class="mb-2"><strong>Peserta:</strong> Maks 30 orang per batch</li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 mt-4 mt-md-0">
+          <div class="row g-4">
+            <div class="col-6" data-aos="zoom-in" data-aos-delay="100">
+              <div class="feature-card border shadow-sm h-100">
+                <h6 class="mb-2">Profil Profesional</h6>
+                <p class="small text-muted mb-0">Optimalkan foto, headline, dan ringkasan.</p>
+              </div>
+            </div>
+            <div class="col-6" data-aos="zoom-in" data-aos-delay="150">
+              <div class="feature-card border shadow-sm h-100">
+                <h6 class="mb-2">Strategi Jaringan</h6>
+                <p class="small text-muted mb-0">Bangun koneksi relevan untuk peluang kerja.</p>
+              </div>
+            </div>
+            <div class="col-6" data-aos="zoom-in" data-aos-delay="200">
+              <div class="feature-card border shadow-sm h-100">
+                <h6 class="mb-2">Peluang Karier</h6>
+                <p class="small text-muted mb-0">Memahami algoritma LinkedIn dan pencarian pekerjaan efektif.</p>
+              </div>
+            </div>
+            <div class="col-6" data-aos="zoom-in" data-aos-delay="250">
+              <div class="feature-card border shadow-sm h-100">
+                <h6 class="mb-2">Feedback Praktis</h6>
+                <p class="small text-muted mb-0">Tugas praktis + review instruktur.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section id="benefits" class="bg-light">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h3>Benefits of Joining</h3>
+        <p class="text-muted">Apa yang akan peserta dapatkan setelah mengikuti kelas ini?</p>
+      </div>
+
+      <div class="row g-4 text-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-md-4">
+          <div class="feature-card border shadow-sm h-100">
+            <h5>Optimized LinkedIn Profile</h5>
+            <p class="text-muted small mb-0">Bangun profil profesional yang menarik recruiter.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card border shadow-sm h-100">
+            <h5>Networking Strategies</h5>
+            <p class="text-muted small mb-0">Memperluas jaringan secara efektif untuk peluang kerja.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card border shadow-sm h-100">
+            <h5>Career Opportunities</h5>
+            <p class="text-muted small mb-0">Teknik menemukan pekerjaan dan proyek yang sesuai skill.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h3>Testimonials</h3>
+        <p class="text-muted">Apa kata peserta sebelumnya?</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="testimonial p-4 shadow-sm h-100">
+            <p class="mb-3">"Kelas ini sangat membantu saya mengoptimalkan profil LinkedIn. Saya menerima pesan dari
+              recruiter setelah 2 minggu!"</p>
+            <strong>- Rina, Marketing Professional</strong>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+          <div class="testimonial p-4 shadow-sm h-100">
+            <p class="mb-3">"Instruktur jelas dan materinya praktis. Sesi Q&A sangat membantu memahami strategi jaringan."
+            </p>
+            <strong>- Budi, Fresh Graduate</strong>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="testimonial p-4 shadow-sm h-100">
+            <p class="mb-3">"Saya bisa langsung menerapkan tips yang diajarkan dan profil LinkedIn saya jauh lebih
+              profesional."</p>
+            <strong>- Maya, Content Creator</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="bg-light">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h3>FAQ</h3>
+        <p class="text-muted">Pertanyaan yang sering diajukan peserta</p>
+      </div>
+
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6" data-aos="fade-right">
+          <div class="accordion" id="accordionFAQ">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse1">Apakah materi dapat diakses ulang?</button>
+              </h2>
+              <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body text-muted">Ya, peserta akan mendapatkan rekaman video dan materi PDF
+                  setelah kelas.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse2">Apakah ada sertifikat?</button>
+              </h2>
+              <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body text-muted">Peserta akan mendapatkan sertifikat digital setelah menyelesaikan
+                  kelas.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse3">Apakah kelas live di Zoom?</button>
+              </h2>
+              <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body text-muted">Ya, semua sesi dilakukan secara live melalui Zoom.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 text-center" data-aos="fade-left">
+          <img src="https://images.unsplash.com/photo-1588702547923-7093a6c3ba33?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder"
+            alt="FAQ ilustrasi">
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- REGISTER -->
+<section id="register" style="position: relative; overflow: hidden; background: linear-gradient(135deg, #0a66c2 0%, #4dabf7 100%);">
+  <!-- Optional decorative wave -->
+  <div class="wave" style="position:absolute; top:0; left:0; width:100%; height:100%; opacity:0.1;">
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,0 C300,100 900,0 1200,80 L1200,120 L0,120 Z" fill="#ffffff"/>
+    </svg>
+  </div>
+
+  <div class="container position-relative" style="z-index: 2;">
+    <div class="text-center text-white mb-5" data-aos="fade-up">
+      <h3 class="fw-bold display-6">Daftar Sekarang</h3>
+      <p class="small">Jangan lewatkan kesempatan untuk meningkatkan karier Anda di LinkedIn</p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="card shadow-lg border-0" style="border-radius: 20px; backdrop-filter: blur(12px); background: rgba(255,255,255,0.15);">
+          <div class="card-body p-4">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label text-white">Nama Lengkap</label>
+                <input type="text" class="form-control" id="name" placeholder="Nama Anda" >
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label text-white">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Email Anda" >
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label text-white">Nomor HP</label>
+                <input type="tel" class="form-control" id="phone" placeholder="0812xxxxxxx" >
+              </div>
+              <button type="submit" class="btn btn-accent w-100 fw-bold" style="background: linear-gradient(90deg, #ff7e5f, #feb47b); box-shadow: 0 8px 20px rgba(0,0,0,0.2);">Daftar Sekarang</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container text-center">
+      <p class="mb-0 text-muted">&copy; 2025 Belajar LinkedIn. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+      offset: 100,
+    });
+  </script>
+</body>
+
+</html>

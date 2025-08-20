@@ -1,0 +1,56 @@
+/* Custom minimal styles */
+:root{
+  --radius: 1.25rem;
+}
+
+.bg-gradient{
+  background: radial-gradient(1200px 400px at 10% -10%, rgba(13,110,253,.08), transparent),
+              radial-gradient(800px 300px at 90% 0%, rgba(13,110,253,.06), transparent);
+}
+
+.hero-illustration{
+  border-radius: var(--radius);
+}
+
+.bg-shape,
+.bg-shape-2{
+  position:absolute;
+  inset:auto -10% -20% auto;
+  width: 60vw;
+  height: 60vw;
+  max-width: 900px;
+  max-height: 900px;
+  filter: blur(80px);
+  transform: rotate(8deg);
+  z-index: -1;
+  background: radial-gradient(closest-side, rgba(13,110,253,.15), transparent);
+}
+.bg-shape-2{
+  inset: -10% auto auto -10%;
+  transform: rotate(-8deg);
+}
+
+.hover-card{
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.hover-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 .75rem 1.5rem rgba(0,0,0,.08)!important;
+}
+
+/* Reveal on scroll */
+.reveal{
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+.reveal.visible{
+  opacity: 1;
+  transform: none;
+}
+.reveal.delay-1{ transition-delay: .1s; }
+.reveal.delay-2{ transition-delay: .2s; }
+.reveal.delay-3{ transition-delay: .3s; }
+
+/* Better section spacing on small screens */
+section{ scroll-margin-top: 80px; }
